@@ -7,10 +7,10 @@ const minute = second * 60;
 const hour = minute * 60;
 const day = hour * 24; // milliseconds
 
-const today = new Date();
-
 function countDown() {
-    console.log('Second past')
+    const today = new Date();
+    const timeSpan = birthday - today;
+    console.log(timeSpan);
 }
 
 setInterval(countDown, second);
