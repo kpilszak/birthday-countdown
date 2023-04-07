@@ -29,6 +29,8 @@ function countDown() {
     const hours = Math.floor((timeSpan % day) / hour);
     const minutes = Math.floor((timeSpan % hour) / minute);
     const seconds = Math.floor((timeSpan % minute) / second);
+
+    timeLeft.innerHTML = days + ' days ' + hours + ' hours ' + minutes + ' min ' + seconds + ' seconds ';
 }
 
 timerId = setInterval(countDown, second);
