@@ -17,9 +17,7 @@ function countDown() {
         timeLeft.innerHTML = "Hope you had a nice Birthday!";
         clearInterval(timerId);
         return;
-    }
-
-    if (timeSpan <= 0) {
+    } else if (timeSpan <= 0) {
         timeLeft.innerHTML = "Happy Birthday!!!";
         clearInterval(timerId);
         return;
